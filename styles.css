@@ -401,12 +401,74 @@ body {
 
 @media screen and (max-width: 767px) {
   .video__container {
-    height: 350px;
+    height: 250px;
   }
 
-  .btn {
-    padding: 1rem 3rem !important;
-    font-size: 0.875rem !important;
+  .h__header .textHolder,
+  .giveaway__section .textHolder {
+    margin: 0 1rem 7rem;
+  }
+
+  .h__header .textHolder .title {
+    font-size: 2.65rem;
+  }
+
+  .h__header .textHolder .details,
+  .h__about__section .textHolder .details {
+    margin: 1.25rem 0 1.875rem;
+  }
+
+  .h__header .textHolder .details,
+  .h__about__section .textHolder .details {
+    font-size: 1.05rem;
+  }
+
+  .h__about__section .about__text {
+    font-size: 0.875rem;
+  }
+
+  .giveaway__section .textHolder,
+  .h__about__section .textHolder {
+    margin: 0 1rem 1rem;
+  }
+
+  .giveaway__section .textHolder .title,
+  .h__about__section .textHolder .title,
+  .h__footer .section__title {
+    font-size: 1.65rem;
+    line-height: 1.45;
+  }
+
+  .spinner__holder {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .gift__box__img,
+  .confetti__img {
+    width: 90px;
+  }
+
+  .spinner_img {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .gift__box__img {
+    left: -4%;
+  }
+
+  .confetti__img {
+    right: -2%;
+  }
+
+  .h__about__section .textHolder {
+    margin-bottom: 3rem;
+  }
+
+  .video__section .header__holder {
+    margin: 0 2rem 2rem;
   }
 }
 
