@@ -1,6 +1,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .h__header {
@@ -9,6 +10,9 @@ body {
     #242424 0%,
     #171717 100%
   );
+}
+
+.h__header .swiper {
 }
 
 .h__nav {
@@ -45,8 +49,51 @@ body {
   color: #ffffff;
 }
 
-.h__header .header__content {
+.h__header .header__content .swiper-wrapper {
   padding: 5rem 0 8rem;
+}
+
+.nav__arrow_holder {
+  position: relative;
+  display: inline-flex;
+  gap: 0 2rem;
+  width: 120px;
+  margin-top: 4rem;
+}
+
+.nav__arrow_holder .swiper-button-next,
+.nav__arrow_holder .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__arrow_holder .swiper-button-prev {
+  left: 0;
+}
+
+.nav__arrow_holder .swiper-button-next path,
+.nav__arrow_holder .swiper-button-prev path {
+  fill: #c9bcef !important;
+}
+
+.nav__arrow_holder .swiper-button-next circle,
+.nav__arrow_holder .swiper-button-prev circle {
+  stroke: #c9bcef !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper-button-next.swiper-button-disabled path,
+.swiper-button-prev.swiper-button-disabled path {
+  fill: #535353 !important;
+}
+
+.swiper-button-next.swiper-button-disabled circle,
+.swiper-button-prev.swiper-button-disabled circle {
+  stroke: #535353 !important;
 }
 
 .h__header .textHolder {
@@ -57,6 +104,7 @@ body {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 0;
+  line-height: 1.45;
 }
 
 .h__header .textHolder .details {
@@ -100,7 +148,7 @@ body {
   text-align: center;
   font-size: 1.95rem;
   font-weight: 500;
-  line-height: 104.5%;
+  line-height: 1.45;
   margin-bottom: 4rem;
 }
 
@@ -123,7 +171,7 @@ body {
 
 .h__about__section .textHolder .title {
   font-size: 1.95rem;
-  line-height: 104.5%;
+  line-height: 1.45;
   text-align: start;
   margin-bottom: 0;
 }
@@ -145,6 +193,7 @@ body {
 
 .gift__box__img,
 .confetti__img {
+  width: 110px;
   position: absolute;
   animation: float 3s ease-in-out infinite;
 }
@@ -155,12 +204,12 @@ body {
 
 .gift__box__img {
   top: 30%;
-  left: -25%;
+  left: -20%;
 }
 
 .confetti__img {
   bottom: 10%;
-  right: -20%;
+  right: -15%;
 }
 
 .video__section .header__holder {
@@ -364,6 +413,14 @@ body {
   .h__about__section .about__text {
     font-size: 1.15rem;
   }
+
+  .nav__arrow_holder {
+    position: absolute !important;
+    bottom: -7rem;
+    left: 50% !important;
+    margin-left: -60px !important;
+  }
+
 
   .giveaway__section .textHolder,
   .h__about__section .textHolder {

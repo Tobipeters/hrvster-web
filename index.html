@@ -11,12 +11,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- AOS Style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- Quicksnad font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,11 +32,13 @@
     <header class="h__header">
       <div class="container">
         <nav class="h__nav">
-          <img src="./images/hrvster-logo.svg" alt="Hrvster logo" />
+          <a href="/">
+            <img src="./images/hrvster-logo.svg" alt="Hrvster logo" />
+          </a>
 
           <ul class="menu__group">
             <li class="item">
-              <a href="#">About us</a>
+              <a href="#about-section">About us</a>
             </li>
 
             <li class="item">
@@ -49,31 +52,243 @@
         </nav>
 
         <section class="header__content">
-          <div class="row">
-            <div
-              class="col-lg-6 d-flex align-items-center justify-content-center"
-            >
-              <div class="textHolder">
-                <h3 class="title">Rewards Made Easy</h3>
-                <p class="details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Luctus enim consectetur faucibus tellus.
-                </p>
-                <button class="btn h__btn">Let’s get started</button>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div
+                    class="col-lg-6 d-flex align-items-center justify-content-center"
+                  >
+                    <div>
+                      <div
+                        class="textHolder"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                      >
+                        <h3 class="title">Rewards Made Easy</h3>
+                        <p class="details">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Luctus enim consectetur faucibus tellus.
+                        </p>
+                        <button class="btn h__btn">Let’s get started</button>
+                      </div>
+
+                      <div class="nav__arrow_holder">
+                        <svg
+                          class="swiper-button-prev"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="19.5" cy="19.5" r="19" stroke="#535353" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.0124 12.4205C23.0678 12.4758 23.1117 12.5414 23.1417 12.6136C23.1716 12.6858 23.1871 12.7633 23.1871 12.8415C23.1871 12.9197 23.1716 12.9971 23.1417 13.0693C23.1117 13.1415 23.0678 13.2072 23.0124 13.2624L16.298 19.9756L23.0124 26.6888C23.124 26.8005 23.1867 26.9519 23.1867 27.1098C23.1867 27.2676 23.124 27.419 23.0124 27.5307C22.9008 27.6423 22.7493 27.705 22.5915 27.705C22.4336 27.705 22.2822 27.6423 22.1706 27.5307L15.0364 20.3965C14.9811 20.3413 14.9371 20.2757 14.9072 20.2035C14.8772 20.1312 14.8618 20.0538 14.8618 19.9756C14.8618 19.8974 14.8772 19.82 14.9072 19.7478C14.9371 19.6755 14.9811 19.6099 15.0364 19.5547L22.1706 12.4205C22.2258 12.3652 22.2914 12.3213 22.3636 12.2913C22.4358 12.2613 22.5133 12.2459 22.5915 12.2459C22.6697 12.2459 22.7471 12.2613 22.8193 12.2913C22.8916 12.3213 22.9572 12.3652 23.0124 12.4205Z"
+                            fill="#535353"
+                          />
+                        </svg>
+
+                        <svg
+                          class="swiper-button-next"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="19.5"
+                            cy="19.5"
+                            r="19"
+                            transform="matrix(-1 0 0 1 39 0)"
+                            stroke="#C9BCEF"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9876 12.4205C15.9322 12.4758 15.8883 12.5414 15.8583 12.6136C15.8284 12.6858 15.8129 12.7633 15.8129 12.8415C15.8129 12.9197 15.8284 12.9971 15.8583 13.0693C15.8883 13.1415 15.9322 13.2072 15.9876 13.2624L22.702 19.9756L15.9876 26.6888C15.876 26.8005 15.8133 26.9519 15.8133 27.1098C15.8133 27.2676 15.876 27.419 15.9876 27.5307C16.0992 27.6423 16.2507 27.705 16.4085 27.705C16.5664 27.705 16.7178 27.6423 16.8294 27.5307L23.9636 20.3965C24.0189 20.3413 24.0629 20.2757 24.0928 20.2035C24.1228 20.1312 24.1382 20.0538 24.1382 19.9756C24.1382 19.8974 24.1228 19.82 24.0928 19.7478C24.0629 19.6755 24.0189 19.6099 23.9636 19.5547L16.8294 12.4205C16.7742 12.3652 16.7086 12.3213 16.6364 12.2913C16.5642 12.2613 16.4867 12.2459 16.4085 12.2459C16.3303 12.2459 16.2529 12.2613 16.1807 12.2913C16.1084 12.3213 16.0428 12.3652 15.9876 12.4205Z"
+                            fill="#C9BCEF"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="img__holder" data-aos="zoom-in">
+                      <img
+                        src="./images/hero-border-bg.png"
+                        class="img__border__bg"
+                        alt="border-bg"
+                      />
+                      <img
+                        src="./images/hero-bg.png"
+                        alt="border-bg"
+                        class="header__bg"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center">
-              <div class="img__holder">
-                <img
-                  src="./images/hero-border-bg.png"
-                  class="img__border__bg"
-                  alt="border-bg"
-                />
-                <img
-                  src="./images/hero-bg.png"
-                  alt="border-bg"
-                  class="header__bg"
-                />
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div
+                    class="col-lg-6 d-flex align-items-center justify-content-center"
+                  >
+                    <div>
+                      <div
+                        class="textHolder"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                      >
+                        <h3 class="title">Rewards Made Easy</h3>
+                        <p class="details">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Luctus enim consectetur faucibus tellus.
+                        </p>
+                        <button class="btn h__btn">Let’s get started</button>
+                      </div>
+
+                      <div class="nav__arrow_holder">
+                        <svg
+                          class="swiper-button-prev"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="19.5" cy="19.5" r="19" stroke="#535353" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.0124 12.4205C23.0678 12.4758 23.1117 12.5414 23.1417 12.6136C23.1716 12.6858 23.1871 12.7633 23.1871 12.8415C23.1871 12.9197 23.1716 12.9971 23.1417 13.0693C23.1117 13.1415 23.0678 13.2072 23.0124 13.2624L16.298 19.9756L23.0124 26.6888C23.124 26.8005 23.1867 26.9519 23.1867 27.1098C23.1867 27.2676 23.124 27.419 23.0124 27.5307C22.9008 27.6423 22.7493 27.705 22.5915 27.705C22.4336 27.705 22.2822 27.6423 22.1706 27.5307L15.0364 20.3965C14.9811 20.3413 14.9371 20.2757 14.9072 20.2035C14.8772 20.1312 14.8618 20.0538 14.8618 19.9756C14.8618 19.8974 14.8772 19.82 14.9072 19.7478C14.9371 19.6755 14.9811 19.6099 15.0364 19.5547L22.1706 12.4205C22.2258 12.3652 22.2914 12.3213 22.3636 12.2913C22.4358 12.2613 22.5133 12.2459 22.5915 12.2459C22.6697 12.2459 22.7471 12.2613 22.8193 12.2913C22.8916 12.3213 22.9572 12.3652 23.0124 12.4205Z"
+                            fill="#535353"
+                          />
+                        </svg>
+
+                        <svg
+                          class="swiper-button-next"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="19.5"
+                            cy="19.5"
+                            r="19"
+                            transform="matrix(-1 0 0 1 39 0)"
+                            stroke="#C9BCEF"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9876 12.4205C15.9322 12.4758 15.8883 12.5414 15.8583 12.6136C15.8284 12.6858 15.8129 12.7633 15.8129 12.8415C15.8129 12.9197 15.8284 12.9971 15.8583 13.0693C15.8883 13.1415 15.9322 13.2072 15.9876 13.2624L22.702 19.9756L15.9876 26.6888C15.876 26.8005 15.8133 26.9519 15.8133 27.1098C15.8133 27.2676 15.876 27.419 15.9876 27.5307C16.0992 27.6423 16.2507 27.705 16.4085 27.705C16.5664 27.705 16.7178 27.6423 16.8294 27.5307L23.9636 20.3965C24.0189 20.3413 24.0629 20.2757 24.0928 20.2035C24.1228 20.1312 24.1382 20.0538 24.1382 19.9756C24.1382 19.8974 24.1228 19.82 24.0928 19.7478C24.0629 19.6755 24.0189 19.6099 23.9636 19.5547L16.8294 12.4205C16.7742 12.3652 16.7086 12.3213 16.6364 12.2913C16.5642 12.2613 16.4867 12.2459 16.4085 12.2459C16.3303 12.2459 16.2529 12.2613 16.1807 12.2913C16.1084 12.3213 16.0428 12.3652 15.9876 12.4205Z"
+                            fill="#C9BCEF"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="img__holder" data-aos="zoom-in">
+                      <img
+                        src="./images/hero-border-bg.png"
+                        class="img__border__bg"
+                        alt="border-bg"
+                      />
+                      <img
+                        src="./images/hero-bg.png"
+                        alt="border-bg"
+                        class="header__bg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div
+                    class="col-lg-6 d-flex align-items-center justify-content-center"
+                  >
+                    <div>
+                      <div
+                        class="textHolder"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                      >
+                        <h3 class="title">Rewards Made Easy</h3>
+                        <p class="details">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Luctus enim consectetur faucibus tellus.
+                        </p>
+                        <button class="btn h__btn">Let’s get started</button>
+                      </div>
+
+                      <div class="nav__arrow_holder">
+                        <svg
+                          class="swiper-button-prev"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="19.5" cy="19.5" r="19" stroke="#535353" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.0124 12.4205C23.0678 12.4758 23.1117 12.5414 23.1417 12.6136C23.1716 12.6858 23.1871 12.7633 23.1871 12.8415C23.1871 12.9197 23.1716 12.9971 23.1417 13.0693C23.1117 13.1415 23.0678 13.2072 23.0124 13.2624L16.298 19.9756L23.0124 26.6888C23.124 26.8005 23.1867 26.9519 23.1867 27.1098C23.1867 27.2676 23.124 27.419 23.0124 27.5307C22.9008 27.6423 22.7493 27.705 22.5915 27.705C22.4336 27.705 22.2822 27.6423 22.1706 27.5307L15.0364 20.3965C14.9811 20.3413 14.9371 20.2757 14.9072 20.2035C14.8772 20.1312 14.8618 20.0538 14.8618 19.9756C14.8618 19.8974 14.8772 19.82 14.9072 19.7478C14.9371 19.6755 14.9811 19.6099 15.0364 19.5547L22.1706 12.4205C22.2258 12.3652 22.2914 12.3213 22.3636 12.2913C22.4358 12.2613 22.5133 12.2459 22.5915 12.2459C22.6697 12.2459 22.7471 12.2613 22.8193 12.2913C22.8916 12.3213 22.9572 12.3652 23.0124 12.4205Z"
+                            fill="#535353"
+                          />
+                        </svg>
+
+                        <svg
+                          class="swiper-button-next"
+                          width="39"
+                          height="39"
+                          viewBox="0 0 39 39"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="19.5"
+                            cy="19.5"
+                            r="19"
+                            transform="matrix(-1 0 0 1 39 0)"
+                            stroke="#C9BCEF"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.9876 12.4205C15.9322 12.4758 15.8883 12.5414 15.8583 12.6136C15.8284 12.6858 15.8129 12.7633 15.8129 12.8415C15.8129 12.9197 15.8284 12.9971 15.8583 13.0693C15.8883 13.1415 15.9322 13.2072 15.9876 13.2624L22.702 19.9756L15.9876 26.6888C15.876 26.8005 15.8133 26.9519 15.8133 27.1098C15.8133 27.2676 15.876 27.419 15.9876 27.5307C16.0992 27.6423 16.2507 27.705 16.4085 27.705C16.5664 27.705 16.7178 27.6423 16.8294 27.5307L23.9636 20.3965C24.0189 20.3413 24.0629 20.2757 24.0928 20.2035C24.1228 20.1312 24.1382 20.0538 24.1382 19.9756C24.1382 19.8974 24.1228 19.82 24.0928 19.7478C24.0629 19.6755 24.0189 19.6099 23.9636 19.5547L16.8294 12.4205C16.7742 12.3652 16.7086 12.3213 16.6364 12.2913C16.5642 12.2613 16.4867 12.2459 16.4085 12.2459C16.3303 12.2459 16.2529 12.2613 16.1807 12.2913C16.1084 12.3213 16.0428 12.3652 15.9876 12.4205Z"
+                            fill="#C9BCEF"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="img__holder" data-aos="zoom-in">
+                      <img
+                        src="./images/hero-border-bg.png"
+                        class="img__border__bg"
+                        alt="border-bg"
+                      />
+                      <img
+                        src="./images/hero-bg.png"
+                        alt="border-bg"
+                        class="header__bg"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -85,13 +300,18 @@
               class="col-lg-6 d-flex justify-content-center justify-content-lg-start order-2 order-lg-1"
             >
               <img
+                data-aos="zoom-in"
                 src="./images/giveaway_bg.png"
                 alt="giveaway time on hrvster"
                 class="img-fluid"
               />
             </div>
             <div class="col-lg-6 d-flex align-items-center order-1 order-lg-2">
-              <div class="textHolder">
+              <div
+                class="textHolder"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <h3 class="title">
                   Hands-off giveaways made easy on Twitter, Instagram or
                   Facebook?
@@ -107,7 +327,7 @@
       </div>
     </header>
 
-    <section class="h__about__section">
+    <section class="h__about__section" id="about-section">
       <div class="container">
         <h3 class="title">About Hrvster</h3>
 
@@ -115,7 +335,11 @@
           <div
             class="col-lg-3 d-flex align-items-center justify-content-end justify-content-md-start"
           >
-            <div class="about__text text-center text-lg-start mx-3 mx-md-0 mb-5 mb-lg-0">
+            <div
+              class="about__text text-center text-lg-start mx-3 mx-md-0 mb-5 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               Promote your brand and <br class="d-none d-md-block" />
               allow your followers a <br class="d-none d-md-block" />
               chance to win some prizes
@@ -123,7 +347,7 @@
           </div>
           <div class="col-lg-6 d-flex justify-content-center">
             <div class="gif__bg">
-              <div class="img__holder">
+              <div class="img__holder" data-aos="zoom-in">
                 <img
                   src="./images/hrvster-phone-scroller-gif.gif"
                   alt="Hrvster giveaway reward"
@@ -135,12 +359,20 @@
           <div
             class="col-lg-3 d-flex flex-lg-column justify-content-between mt-5 pt-4 pt-lg-0 mt-lg-0"
           >
-            <div class="about__text">
+            <div
+              class="about__text"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               Engage your followers with Raffle <br class="d-none d-md-block" />
               draws and interactive games
             </div>
 
-            <div class="about__text">
+            <div
+              class="about__text"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               Setup your promotions, and we’ll <br class="d-none d-md-block" />
               handle the rest
             </div>
@@ -152,7 +384,11 @@
             <div
               class="col-lg-6 d-flex align-items-center justify-content-center"
             >
-              <div class="textHolder mr-lg-5">
+              <div
+                class="textHolder mr-lg-5"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <h3 class="title">
                   Turn your tweets, posts and their likes, re-tweets and
                   hashtags into games your followers can play and win prizes.
@@ -167,7 +403,7 @@
             <div
               class="col-lg-6 d-flex justify-content-center justify-content-lg-end"
             >
-              <div class="spinner__holder">
+              <div class="spinner__holder" data-aos="zoom-in">
                 <img
                   src="./images/gift-box.svg"
                   alt="Hrvster gift box"
@@ -286,6 +522,37 @@
         videoPlayer.src += "&autoplay=1";
         overlayBg.style.display = "none";
         playButton.style.display = "none";
+      });
+    </script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        // loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
       });
     </script>
   </body>
