@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="./images/hrvster-logo.ico" />
+    <link rel="icon" href="./images/hrvster-logo-id.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hrvster - Easy reward</title>
     <meta name="description" content="Easy reward" />
@@ -645,10 +645,12 @@
     <script>
       const menuToggle = document.querySelector(".menu__icon");
       const navMenus = document.querySelector(".menu__group");
-      const menuItem = document.querySelector(".item");
+      const menuItems = document.querySelectorAll('[class*="item"]');
 
-      menuItem.addEventListener("click", () => {
-        navMenus.classList.remove("show__menu");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          navMenus.classList.remove("show__menu");
+        });
       });
 
       menuToggle.addEventListener("click", () => {
